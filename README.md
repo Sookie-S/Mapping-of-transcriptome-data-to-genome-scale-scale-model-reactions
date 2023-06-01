@@ -2,7 +2,7 @@
 
 ####################################
 
-map_transcriptome_data function
+src/GSMM_transcriptome_data_mapper/transcriptome_mapper.py contains the map_transcriptome_data function
 
 ####################################
 
@@ -22,15 +22,12 @@ map_transcriptome_data() required 4 positional arguments: 'model', 'transcriptom
 
 
 Installation:
-
-
 python3 -m pip install GSMM_transcriptome_data_mapper
 
 
-Usage:
+Usage: on a python3 terminal
 
-python3
+from GSMM_transcriptome_data_mapper import transcriptome_mapper
+transcriptome_mapper.map_transcriptome_data(model,transcriptomeData,threshold_abundance,max_bound)
 
->>from GSMM_transcriptome_data_mapper import transcriptome_mapper
 
->>transcriptome_mapper.map_transcriptome_data(model,transcriptomeData,threshold_abundance,max_bound)
